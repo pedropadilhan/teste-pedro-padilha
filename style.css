@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+
+/* CABEÇALHO */
+
+header{
+    background-color: #24455E;
+    height: 80px;
+}
+
+img{
+    display: block;
+    width: 150px;
+}
+
+#container-cabecalho{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+#lista-menu{
+    display: flex;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    padding: 15px;
+}
+
+a {
+    color: white;
+}
+
+/* MAIN */
+main{
+    height: 560px;
+}
+
+
+/* RODAPÉ */
+footer{
+    background-color: rgb(75, 75, 75);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 98%;
+    margin: auto auto;
+    padding: 15px;
+}
+
+#rodape{
+    display: flex;
+    justify-content: space-between;
+}
