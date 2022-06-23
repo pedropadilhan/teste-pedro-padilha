@@ -1,4 +1,5 @@
-var map;
+//A PARTE COMENTADA PEGA A LOCALIZAÇÃO ATUAL
+/* var map;
 
 function success(pos) {
     console.log(pos.coords.latitude, pos.coords.longitude);
@@ -29,4 +30,12 @@ var watchID = navigator.geolocation.watchPosition(success, error, {
     enableHighAccuracy: true, //Por padra vem false, POSIÇÂO MAIS PRECISA- Conosme mais bateria
     timeout: 5000 //Por padrao vem infinito, define o tempo que o programa usa pra tentar obter a
 
-});
+}); */
+
+//MAPA SIMPLES
+
+var map = L.map('mapid').setView([51.505, -0.09], 13);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '© OpenStreetMap'
+}).addTo(map);
